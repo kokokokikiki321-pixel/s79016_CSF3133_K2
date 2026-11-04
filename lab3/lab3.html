@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Contact Form</title>
+</head>
+
+<body>
+
+    <!-- Contact Form -->
+    <div>
+        <h2>Contact Form</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <br><br>
+
+            <label for="date">Preferred Contact Date:</label>
+            <input type="date" id="date" required>
+
+            <br><br>
+
+            <label for="satisfaction">Satisfaction Level:</label>
+
+            <input type="range" id="satisfaction"
+                   min="1" max="10" value="5"
+                   oninput="updateRange()">
+
+            <span id="rangeValue">5</span>
+
+            <br><br>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- Calculator -->
+    <div>
+        <h2>Live Calculator</h2>
+
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1"
+               value="0" oninput="calculateSum()">
+
+        <br><br>
+
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2"
+               value="0" oninput="calculateSum()">
+
+        <br><br>
+
+        <output id="result">Sum: 0</output>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <div>
+        <p>Contact us: example@email.com</p>
+
+        <p>
+            &copy; 2026 Interactive Contact Form.
+            All rights reserved.
+        </p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        function updateRange() {
+            let value = document.getElementById("satisfaction").value;
+
+            document.getElementById("rangeValue").textContent = value;
+        }
+
+        function calculateSum() {
+            let num1 = parseFloat(document.getElementById("num1").value) || 0;
+            let num2 = parseFloat(document.getElementById("num2").value) || 0;
+
+            let sum = num1 + num2;
+
+            document.getElementById("result").textContent = "Sum: " + sum;
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            let email = document.getElementById("email").value;
+
+            alert("Thank you! Your form has been submitted.\nEmail: " + email);
+        }
+
+    </script>
+
+</body>
+</html>
+
