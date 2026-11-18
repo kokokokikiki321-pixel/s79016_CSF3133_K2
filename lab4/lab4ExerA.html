@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Terengganu</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+        }
+
+        #trip {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Visit Terengganu</h1>
+        <p>Discover the Beauty of Terengganu</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Terengganu</h2>
+        <p>
+            Terengganu is a beautiful state in Malaysia.
+            It is famous for beaches, islands and traditional food.
+        </p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>Enjoy beautiful beaches and clear blue water.</p>
+            <p>Old Price: <span class="old-price">RM 299</span></p>
+            <p class="price">Promotion: RM 199</p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Enjoy swimming and beautiful sea views.</p>
+            <p>Old Price: <span class="old-price">RM 350</span></p>
+            <p class="price">Promotion: RM 250</p>
+        </article>
+
+        <article class="card">
+            <h3>Drawbridge Kuala Terengganu</h3>
+            <p>Visit the famous landmark of Terengganu.</p>
+            <p>Old Price: <span class="old-price">RM 150</span></p>
+            <p class="price">Promotion: RM 100</p>
+        </article>
+
+        <p>Trip Seats Filled:</p>
+        <meter min="0" max="40" value="28"></meter>
+        28 / 40 Seats
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Explore Terengganu</h2>
+
+        <figure>
+            <video width="500" height="300" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <figcaption>
+                Discover the beautiful places in Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Form Section -->
+    <section id="trip">
+        <h2>Register Your Interest</h2>
+
+        <form class="trip-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <p>Traveller Type:</p>
+
+            <input type="radio" name="type" value="Student">
+            Student
+
+            <input type="radio" name="type" value="Staff">
+            Staff
+
+            <input type="radio" name="type" value="Public">
+            Public
+
+            <p>Interests:</p>
+
+            <input type="checkbox" name="interest" value="Islands">
+            Islands
+
+            <input type="checkbox" name="interest" value="Food">
+            Food
+
+            <input type="checkbox" name="interest" value="Culture">
+            Culture
+
+            <input type="checkbox" name="interest" value="Nature">
+            Nature
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+
+        <address>
+            Email:
+            <a href="mailto:info@visittrg.com">
+                info@visittrg.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
