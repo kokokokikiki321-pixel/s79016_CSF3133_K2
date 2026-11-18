@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <!--
+    ERROR IDENTIFICATION:
+
+    1. shop.html Line 171:
+       rel="stylesheets" changed to rel="stylesheet".
+
+    2. shop.html Lines 174-176:
+       Internal style moved into the head section.
+
+    3. shop.html Line 177:
+       Navigation wrapped inside nav element.
+
+    4. shop.html Line 182:
+       Incorrect color syntax changed to a valid CSS color.
+
+    5. shop.css Line 2:
+       Robotto changed to Roboto.
+
+    6. shop.css Line 3:
+       Background image kept and properly configured.
+
+    7. shop.css Line 4:
+       no repeat changed to no-repeat.
+
+    8. shop.css Line 5:
+       bacground-position changed to background-position.
+
+    9. shop.css Line 18:
+       display: inline changed to display: block.
+
+    10. shop.css Line 23:
+        li:a:hover changed to li a:hover.
+
+    11. shop.css Line 26:
+        #products matches the table ID.
+
+    12. shop.css Line 27:
+        collapsed changed to collapse.
+
+    13. shop.css Line 34:
+        nth-child(2) changed to nth-child(even).
+
+    14. shop.css Line 37:
+        hovered changed to hover.
+
+    15. shop.css Line 45:
+        Missing semicolon added.
+
+    16. shop.css Line 46:
+        Footer declaration corrected and completed.
+    -->
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="books">
+
+            <h2>Welcome to Campus Bookstore</h2>
+
+            <p>
+                Campus Bookstore provides textbooks, stationery
+                and useful gadgets for students. We offer
+                affordable products to support students in
+                their daily learning activities.
+            </p>
+
+            <p>
+                Visit our bookstore to find educational materials,
+                notebooks and other essential items for your
+                studies. We aim to provide quality products
+                at reasonable prices.
+            </p>
+
+            <h2>Our Products</h2>
+
+            <!-- Product Table -->
+            <table id="products">
+
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td class="price">45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td class="price">6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td class="price">25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td class="price">9.90</td>
+                </tr>
+
+                <tr>
+                    <td>Java Programming</td>
+                    <td>Textbook</td>
+                    <td class="price">55.00</td>
+                </tr>
+
+                <tr>
+                    <td>Scientific Calculator</td>
+                    <td>Gadget</td>
+                    <td class="price">35.00</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+        <p>Contact: campusbookstore@gmail.com</p>
+        <p>Terengganu, Malaysia</p>
+    </footer>
+
+</body>
+</html>
